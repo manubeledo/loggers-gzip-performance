@@ -16,23 +16,24 @@ http://localhost/productos
 http://localhost/any-other-path-will-give-error
 ``` 
 
-Commands.
-
 ```
-logger.trace(`Message with Trace LOG`);
+***Commands question one***
 ```
 ```
-logger.debug(`Message with Trace LOG`);
+50 conections & 20 request: artillery quick --count 20 -n 50 http://localhost:8080/info
 ```
 ```
-logger.info(`Message with Trace LOG`);
+100 conections & 20 seconds to make requests : autocannon -c 100 -d 20 http://localhost:8080
 ```
 ```
-logger.warn(`Message with Trace LOG`);
+***Commands question two***
 ```
 ```
-logger.error(`Message with Trace LOG`);
+node --inspect index.js
 ```
 ```
-logger.fatal(`Message with Trace LOG`);
+artillery quick --count 20 -n 50 http://localhost:8080/info
+```
+```
+On the browser: chrome://inspect
 ```
